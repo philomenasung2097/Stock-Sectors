@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Manager</title>
+    <link rel="stylesheet" type="text/css" href="database-manager.css">
+</head>
+<body>
+    <div class="all-sectors">
+        <div class="all-sectors-title">All Sectors</div>
+
+        <div class="actions">
+            <div class="action add-to-priority">Add Selected Sectors to Priority</div>
+            <div class="action delete-sectors">Delete Selected Sectors</div>
+            <!-- <div class="action refresh-sectors">Refresh All Sectors</div> -->
+        </div>
+        
+        <div class="all-sectors">
+            <ul></ul>
+        </div>
+    </div>
+    <div class="priorities">
+        <div class="priorities-title">Priorities</div>
+        <ol class="priority-arrange" id="priority-arrange">
+
+        </ol>
+    </div>
+    <div class="excludes">
+        <div class="excludes-title">Excluded Sectors from Stocks</div>
+        <ul class="excludes-list" style="width: 250px"></ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js" integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.js" integrity="sha512-Fc8SDJVBwajCGX0A9z8lBeRPaCjR25Ek577z9PtQLB7CLBz7Mw1XhjbcD2yDWrGszL/uezKGidtGCng6Fhz3+A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="application/javascript" src="render-from-db.js"></script>
+    <script type="application/javascript" src="database-manager.js"></script>
+    <script type="application/javascript" src="button-actions.js"></script>
+</body>
+</html>

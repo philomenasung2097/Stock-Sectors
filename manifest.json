@@ -1,0 +1,47 @@
+{
+    "name": "Stocks Sectors",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": {
+        "128": "Web Scraping.png",
+        "48": "Web Scraping.png",
+        "16": "Web Scraping.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+
+    "content_scripts": [{
+        "matches": ["<all_urls>", "http://*/*", "https://*/*"],
+        "js": ["addToastifyToWebsite.js", "Investing Malaysia Script.js", "fetch-stock-sectors.js", "Trading View Script.js", "TV Keyboard Shortcuts.js", "Content Script.js"]
+    }],
+
+    "browser_action": {
+        "default_icon": "Web Scraping.png",
+        "default_popup": "index.html"
+    }, 
+   
+      "permissions": [
+        "tabs",
+        
+        "activeTab",
+        "background",
+        "bookmarks",
+        "clipboardRead",
+        "clipboardWrite",
+        "contentSettings",
+        "contextMenus",
+        "cookies",
+        "storage",
+        "management",
+        "windows",
+        "*://*/*"
+
+
+    ] ,
+     "web_accessible_resources": [
+        "Info.png"
+      ], 
+      "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net/ https://code.jquery.com/ https://maxcdn.bootstrapcdn.com/ https://www.googletagmanager.com/ https://www.googleapis.com/ https://apis.google.com/; object-src 'self'"
+}

@@ -1,0 +1,102 @@
+body{
+    width: 400px;
+    height: 100%;
+    font-size: 22px;
+    padding: 5px 10px 0 10px;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.scrape-button{
+    background: rgb(191, 255, 191);
+    font-size: 22px;
+    color:rgb(1, 18, 250);
+    padding: 5px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.title{
+    margin: 3px 0;
+}
+
+.scrape-result{
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.non-existing, .existing, .success{
+    display: none;
+}
+
+.database-manager{
+    float: right;
+    margin: 30px 5px 5px 0;
+    text-decoration: none;
+    color: rgb(75, 111, 255);
+display: flex;
+
+justify-content: space-between;
+}
+
+.database-manager:hover{
+    color:rgb(75, 213, 255)
+}
+
+.database-manager img{
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.editor-font-size .actions .action{
+    cursor: pointer;
+    margin: 10px 0;
+    width: 140px;
+    margin: 4px 0;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius:50px;
+    user-select: none;
+}
+
+.editor-font-size .actions .action:nth-child(1){
+    background: rgb(255, 191, 161);
+}
+
+.editor-font-size .actions .action:nth-child(2){
+    background: rgb(210, 255, 148);
+}
+
+.editor-font-size .actions .action:nth-child(3){
+    width: 170px;
+    border: 1px solid purple;
+    margin: 10px 0;
+}
+
+.keyboard-shortcuts .title{
+    font-size: 27px;
+    margin-bottom: 5px;
+    
+}
+
+.shortcut-desc{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+}
+
+.shortcut-key{
+    font-weight: 700;
+    color: blue;
+}
